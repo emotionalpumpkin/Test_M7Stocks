@@ -1,0 +1,61 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Large & generated data files ─────────────────────────────────────────────
+*.csv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.xlsx
+*.xls
+!mag7_closing_prices.csv   # keep the core app dataset tracked
+
+# ── ML model artifacts ────────────────────────────────────────────────────────
+*.joblib
+*.pt
+*.pth
+*.onnx
+models/
+
+# ── Streamlit ─────────────────────────────────────────────────────────────────
+.streamlit/secrets.toml    # API keys & secrets — NEVER commit this
+
+# ── Local environment & secrets ───────────────────────────────────────────────
+.env
+.env.*
+*.pem
+*.key
+secrets.toml
+config.local.toml
+
+# ── OS noise ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDEs ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
