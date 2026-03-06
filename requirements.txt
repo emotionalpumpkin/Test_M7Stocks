@@ -1,0 +1,16 @@
+# ── Dashboard & UI ────────────────────────────────────────────────────────────
+streamlit>=1.33.0      # App framework — run with: streamlit run StockPredictor.py
+
+# ── Data ──────────────────────────────────────────────────────────────────────
+pandas>=2.2.0          # DataFrames, rolling windows, CSV parsing
+numpy>=1.26.0          # Vectorized math (RSI, returns)
+
+# ── Visualization ─────────────────────────────────────────────────────────────
+plotly>=5.20.0         # Interactive price charts, subplots, bar charts
+
+# ── Market Data (for future live-feed extension) ──────────────────────────────
+yfinance>=0.2.40       # Pull fresh OHLCV data from Yahoo Finance
+
+# ── Machine Learning (for future prediction extension) ────────────────────────
+scikit-learn>=1.4.0    # Regression, classification, feature scaling
+xgboost>=2.0.0         # Gradient boosted trees for price prediction
